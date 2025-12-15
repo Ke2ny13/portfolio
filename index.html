@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kenny Boluka — Développeur Web Full-Stack & Python - Designer</title>
+    <meta
+      name="description"
+      content="Portfolio minimaliste — Développeur Web Front-End. Sites simples, élégants et efficaces."
+    />
+    <meta
+      name="keywords"
+      content="Kenny Boluka, Développeur Web, Full-Stack, Python, Designer, Portfolio, Sites Web, Conception Web"
+    />
+    <meta
+      property="og:image"
+      content="https://i.pinimg.com/736x/62/8c/a9/628ca98b23375978b0cff961785f080a.jpg"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="brand">
+          <div class="avatar" aria-hidden="true">
+            <a href="index.html">KB</a>
+          </div>
+          <div>
+            <div style="font-weight: 700">Kenny Boluka</div>
+            <div style="font-size: 0.85rem; color: var(--muted)">
+              Développeur Web Full-Stack & Python - Designer
+            </div>
+          </div>
+        </div>
+        <nav aria-label="Navigation principale">
+          <a href="#accueil">Accueil</a>
+          <a href="#apropos">À propos</a>
+          <a href="#projets">Projets</a>
+          <a href="#designs">Designs</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <!-- HERO -->
+      <section id="accueil" class="hero" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div class="hero-text">
+            <div class="role">
+              Développeur Web Full-Stack & Python - Designer
+            </div>
+            <h1 id="hero-title">Kenny Boluka</h1>
+            <p class="lead">
+              Je conçois des sites simples, élégants et efficaces ainsi que
+              toute autre conception qui pourrait vous intéresser (Logiciel,
+              application, affiche, invitation, magazine, etc.).
+            </p>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap">
+              <a class="cta" href="#projets">Voir mes projets</a>
+              <a class="cta secondary" href="#contact">Me contacter</a>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div
+              class="avatar-photo"
+              role="img"
+              aria-label="Photo de Kenny Boluka"
+              style="
+                width: 200px;
+                height: 200px;
+                border-radius: 16px;
+                overflow: hidden;
+                background: rgba(255, 255, 255, 0.02);
+              "
+            >
+              <picture>
+                <source srcset="avatar.jpg" type="image/jpeg" />
+                <img
+                  src="/avatar.jpg"
+                  alt="Photo de Kenny Boluka"
+                  loading="lazy"
+                  decoding="async"
+                  width="200"
+                  height="200"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                  "
+                  onload="(function(){const f=this.parentNode.parentNode.querySelector('.avatar-fallback'); if(f){ f.style.display='none'; f.setAttribute('aria-hidden','true'); } })();"
+                  onerror="(function(){this.style.display='none'; const f=this.parentNode.parentNode.querySelector('.avatar-fallback'); if(f){ f.style.display='block'; f.setAttribute('aria-hidden','false'); } })();"
+                />
+              </picture>
+
+              <svg
+                class="avatar-fallback"
+                viewBox="0 0 200 200"
+                width="100%"
+                height="100%"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-hidden="true"
+                style="display: none"
+              >
+                <rect
+                  width="200"
+                  height="200"
+                  rx="16"
+                  fill="rgba(255,255,255,0.02)"
+                />
+                <circle cx="60" cy="46" r="20" fill="#60a5fa" />
+                <rect
+                  x="30"
+                  y="76"
+                  width="60"
+                  height="18"
+                  rx="6"
+                  fill="rgba(255,255,255,0.04)"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="apropos" aria-labelledby="about-title">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+          "
+        >
+          <h2 id="about-title">À propos</h2>
+          <div style="color: var(--muted)">Simplicité et efficacité</div>
+        </div>
+        <div style="height: 12px"></div>
+        <div class="about-grid">
+          <div class="card">
+            <p style="margin: 0 0 8px">
+              <strong
+                >Passionné par le web et la programmation en général, je vous
+                offre une expérience client sur mesure en vous accompagnant pas
+                à pas dans la conception de votre projet.</strong
+              >
+            </p>
+            <p style="color: var(--muted); margin: 0">
+              Développeur web passionné par la création de solutions numériques
+              innovantes, je possède une solide expérience dans le développement
+              d’applications front-end et back-end. Maîtrisant les langages
+              HTML, CSS, JavaScript, TypeScript, PHP et Python, ainsi que les
+              frameworks modernes tels qu’Angular, NestJS, ExpressJS et Django,
+              j’assure la conception d’interfaces performantes et la gestion
+              efficace des bases de données MySQL et MongoDB. Habitué à
+              travailler avec Git, GitHub, Figma et WordPress, je mets mes
+              compétences au service de projets ambitieux afin de contribuer
+              activement à l’atteinte des objectifs de votre entreprise.
+            </p>
+            <div class="skills" aria-hidden="false" style="margin-top: 12px">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">PHP</span>
+              <span class="chip">MYSQL</span>
+              <span class="chip">Node JS</span>
+              <span class="chip">Mongo DB</span>
+              <span class="chip">Express JS</span>
+              <span class="chip">Angular</span>
+              <span class="chip">Nest JS</span>
+              <span class="chip">Git</span>
+              <span class="chip">Github</span>
+              <span class="chip">Figma</span>
+              <span class="chip">Bootstrap</span>
+              <span class="chip">Wordpress</span>
+              <span class="chip">Python</span>
+              <span class="chip">Django</span>
+            </div>
+            <div style="margin-top: 14px">
+              <a
+                class="btn cta"
+                aria-label="Télécharger le CV (s'ouvre dans un nouvel onglet)"
+                style="
+                  display: inline-block;
+                  padding: 10px 14px;
+                  background: linear-gradient(90deg, #06b6d4, #3b82f6);
+                  color: #fff;
+                  border-radius: 10px;
+                  text-decoration: none;
+                  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.18);
+                  transition: transform 0.12s ease, box-shadow 0.12s ease;
+                "
+                onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 14px 30px rgba(59,130,246,0.2)';"
+                onmouseout="this.style.transform='none'; this.style.boxShadow='0 6px 18px rgba(59,130,246,0.18)';"
+                onfocus="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 14px 30px rgba(59,130,246,0.2)';"
+                onblur="this.style.transform='none'; this.style.boxShadow='0 6px 18px rgba(59,130,246,0.18)';"
+                href="/Mon_CV.pdf"
+                target="_blank"
+                rel="noopener"
+                >Voir mon CV</a
+              >
+            </div>
+          </div>
+          <div>
+            <div
+              class="card"
+              style="
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                align-items: flex-start;
+              "
+            >
+              <div style="font-weight: 700">Compétences clés</div>
+              <div style="color: var(--muted); font-size: 0.95rem">
+                Création d’interfaces réactives et accessibles, optimisation des
+                performances web, développement de composants réutilisables avec
+                React, gestion de projets via Git et intégration de maquettes
+                Figma.
+              </div>
+              <div
+                style="
+                  width: 100%;
+                  height: 8px;
+                  background: rgba(255, 255, 255, 0.02);
+                  border-radius: 6px;
+                  overflow: hidden;
+                  margin-top: 6px;
+                "
+              >
+                <div
+                  style="
+                    width: 80%;
+                    height: 100%;
+                    background: linear-gradient(90deg, var(--accent), #60a5fa);
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projets" aria-labelledby="projects-title">
+        <h2 id="projects-title">Mes Projets</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project card" aria-labelledby="p1">
+            <div class="thumb">
+              <img
+                src="/projet_1.png"
+                alt="Capture du site Institut Bobokoli"
+                loading="lazy"
+              />
+            </div>
+            <div class="proj-body">
+              <h3 id="p1" class="proj-title" style="margin: 0">
+                Site vitrine — Institut Bobokoli
+              </h3>
+              <div class="proj-tech">HTML • CSS • JavaScript</div>
+              <p style="color: var(--muted); margin: 0 0 8px">
+                Site vitrine responsive, optimisation des performances et SEO
+                basique.
+              </p>
+              <div class="proj-actions">
+                <a
+                  class="btn view"
+                  href="https://institut-bobokoli.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >Voir le site</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project card" aria-labelledby="p2">
+            <div class="thumb">
+              <img
+                src="/projet_2.png"
+                alt="Capture du site de Madose"
+                loading="lazy"
+              />
+            </div>
+            <div class="proj-body">
+              <h3 id="p2" class="proj-title" style="margin: 0">
+                Site vitrine - Editions Madose
+              </h3>
+              <div class="proj-tech">HTML • CSS • JavaScript</div>
+              <p style="color: var(--muted); margin: 0 0 8px">
+                Site vitrine responsive pour maison d'édition, avec galerie
+                d'images et info de contact.
+              </p>
+              <div class="proj-actions">
+                <a
+                  class="btn view"
+                  href="https://madose.net/"
+                  target="_blank"
+                  rel="noopener"
+                  >Voir le site</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project card" aria-labelledby="p3">
+            <div class="thumb">
+              <img
+                src="/projet_3.png"
+                alt="Capture du projet Pierre Papier Ciseaux"
+                loading="lazy"
+              />
+            </div>
+            <div class="proj-body">
+              <h3 id="p3" class="proj-title" style="margin: 0">
+                Jeu Web — Pierre Papier Ciseaux
+              </h3>
+              <div class="proj-tech">HTML • CSS • JS</div>
+              <p style="color: var(--muted); margin: 0 0 8px">
+                Jeu simple en ligne de Pierre Papier Ciseaux avec score et
+                animations.
+              </p>
+              <div class="proj-actions">
+                <a
+                  class="btn view"
+                  href="https://pierre-feuille-ciseau-kbw.onrender.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >Voir le site</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- DESIGNS -->
+      <section id="designs" aria-labelledby="designs-title">
+        <h2 id="designs-title">Mes Designs</h2>
+        <p style="color: var(--muted); margin-bottom: 16px">
+          Découvrez mes travaux de design et ma créativité graphique.
+        </p>
+        <div class="card design-main">
+          <div class="design-images">
+            <img src="/ADN_1.jpg" alt="Design affiche" loading="lazy" />
+            <img src="/ADN_2.jpg" alt="Design invitation" loading="lazy" />
+            <img src="/ADN_3.jpg" alt="Design magazine" loading="lazy" />
+          </div>
+
+          <!-- Bouton vers tout le portfolio design -->
+          <div
+            style="grid-column: 1 / -1; text-align: center; margin-top: 16px"
+          >
+            <a
+              class="cta"
+              href="https://drive.google.com/drive/folders/1-PYp6yssX1gqpRC8f1cQbZcuPxonh4Nd?usp=sharing"
+              target="_blank"
+              rel="noopener"
+            >
+              Voir tous mes designs
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <div style="height: 6px"></div>
+        <div class="contact-grid">
+          <div class="card">
+            <p style="margin: 0 0 8px">
+              <strong
+                >Tu veux collaborer sur un projet ou en savoir plus ?
+                Écris-moi.</strong
+              >
+            </p>
+            <p style="color: var(--muted); margin: 0 0 12px">
+              Je réponds généralement rapidement. Voici mes coordonnées :
+            </p>
+            <p style="margin: 0 0 8px">
+              ✉️
+              <a href="mailto:bolukakenny@gmail.com">bolukakenny@gmail.com</a>
+            </p>
+            <div class="socials" style="margin-top: 12px">
+              <a
+                href="https://github.com/Ke2ny13"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+              <a
+                href="https://www.linkedin.com/in/kenny-boluka-b40353268/"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <form
+              id="contact-form"
+              onsubmit="handleContact(event)"
+              aria-label="Formulaire de contact"
+            >
+              <input type="text" name="name" placeholder="Votre nom" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Votre email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Votre message"
+                required
+              ></textarea>
+              <button type="submit">Envoyer</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <div>© Kenny Boluka <span id="year"></span></div>
+        <div style="display: flex; gap: 12px; align-items: center">
+          <a class="top-link" href="#accueil">Retour en haut</a>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // année dynamique
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // simple contact handler: opens mailto with form data
+      function handleContact(e) {
+        e.preventDefault();
+        const f = e.target;
+        const name = encodeURIComponent(f.name.value.trim());
+        const email = encodeURIComponent(f.email.value.trim());
+        const message = encodeURIComponent(f.message.value.trim());
+        const subject = encodeURIComponent("Contact via portfolio — " + name);
+        const body = encodeURIComponent(
+          "De: " + name + " (" + email + ")\n\n" + decodeURIComponent(message)
+        );
+        // open mail client
+        window.location.href = `mailto:bolukakenny@gmail.com?subject=${subject}&body=${body}`;
+      }
+    </script>
+    <script>
+      const sections = document.querySelectorAll("section");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add("visible");
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      sections.forEach((sec) => observer.observe(sec));
+    </script>
+  </body>
+</html>
