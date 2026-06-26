@@ -1,21 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Kenny Boluka — Développeur Web Full-Stack & Python - Designer</title>
+    <title>Kenny Boluka — Ingénieur Électricien & Développeur Web</title>
     <meta
       name="description"
-      content="Portfolio minimaliste — Développeur Web Front-End. Sites simples, élégants et efficaces."
+      content="Portfolio de Kenny Boluka, ingénieur électricien et développeur web freelance à Kinshasa. Sites web, design graphique et solutions sur mesure."
     />
     <meta
       name="keywords"
-      content="Kenny Boluka, Développeur Web, Full-Stack, Python, Designer, Portfolio, Sites Web, Conception Web"
+      content="Kenny Boluka, Ingénieur Électricien, Développeur Web, Kinshasa, Full-Stack, Python, Designer, Portfolio, Sites Web, WhatsApp"
+    />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      property="og:title"
+      content="Kenny Boluka — Ingénieur Électricien & Développeur Web"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio de Kenny Boluka, ingénieur électricien et développeur web freelance à Kinshasa. Sites web, design graphique et solutions sur mesure."
     />
     <meta
       property="og:image"
-      content="https://i.pinimg.com/736x/62/8c/a9/628ca98b23375978b0cff961785f080a.jpg"
+      content="https://ke2ny13.github.io/portfolio/assets/images/logo_kb.png"
     />
+    <meta property="og:url" content="https://ke2ny13.github.io/portfolio/" />
+    <meta property="og:type" content="website" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -43,38 +60,97 @@
           <div class="avatar" aria-hidden="true">
             <a href="index.html">KB</a>
           </div>
-          <div>
-            <div style="font-weight: 700">Kenny Boluka</div>
-            <div style="font-size: 0.85rem; color: var(--muted)">
-              Développeur Web Full-Stack & Python - Designer
-            </div>
-          </div>
+          <div class="brand-name">Kenny Boluka</div>
         </div>
-        <nav aria-label="Navigation principale">
-          <a href="#accueil">Accueil</a>
-          <a href="#apropos">À propos</a>
-          <a href="#projets">Projets</a>
-          <a href="#designs">Designs</a>
-          <a href="#contact">Contact</a>
+
+        <nav aria-label="Navigation principale" id="mainNav">
+          <a href="#accueil" data-i18n="nav.home">Accueil</a>
+          <a href="#apropos" data-i18n="nav.about">À propos</a>
+          <a href="#projets" data-i18n="nav.projects">Projets</a>
+          <a href="#services" data-i18n="nav.services">Services</a>
+          <a href="#designs" data-i18n="nav.designs">Designs</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
         </nav>
+
+        <div class="header-actions">
+          <div class="lang-toggle" role="group" aria-label="Choix de la langue">
+            <button class="lang-btn" data-lang="fr" aria-pressed="true">
+              FR
+            </button>
+            <button class="lang-btn" data-lang="en" aria-pressed="false">
+              EN
+            </button>
+          </div>
+
+          <a
+            class="whatsapp-btn"
+            data-whatsapp="generic"
+            href="https://wa.me/243978974603"
+            target="_blank"
+            rel="noopener"
+            data-i18n-aria="whatsapp.headerLabel"
+            aria-label="WhatsApp"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.85.51 3.58 1.4 5.07L2 22l5.2-1.49a9.86 9.86 0 0 0 4.84 1.27h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.78 14.1c-.24.68-1.41 1.33-1.93 1.4-.49.07-1.04.1-1.68-.1-.39-.12-.89-.29-1.53-.57-2.7-1.17-4.46-3.9-4.6-4.09-.13-.18-1.1-1.46-1.1-2.78 0-1.32.69-1.96.93-2.23.24-.27.53-.34.71-.34.18 0 .35 0 .51.01.16.01.38-.06.6.46.23.55.78 1.92.85 2.06.07.14.12.31.02.49-.1.18-.15.29-.29.45-.14.16-.3.36-.43.48-.14.13-.29.27-.13.55.17.28.76 1.25 1.63 2.03 1.12.99 2.07 1.3 2.35 1.45.28.14.45.12.62-.07.18-.19.74-.86.94-1.16.2-.3.4-.25.67-.15.27.1 1.72.81 2.02.96.3.15.5.22.57.34.08.13.08.74-.16 1.42Z"
+              />
+            </svg>
+            <span data-i18n="whatsapp.headerLabel">WhatsApp</span>
+          </a>
+
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            data-i18n-aria="nav.menuToggle"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </header>
 
       <!-- HERO -->
       <section id="accueil" class="hero" aria-labelledby="hero-title">
         <div class="hero-inner">
           <div class="hero-text">
-            <div class="role">
-              Développeur Web Full-Stack & Python - Designer
+            <div class="role" data-i18n="hero.role">
+              Ingénieur Électricien & Développeur Web
             </div>
             <h1 id="hero-title">Kenny Boluka</h1>
-            <p class="lead">
-              Je conçois des sites simples, élégants et efficaces ainsi que
-              toute autre conception qui pourrait vous intéresser (Logiciel,
-              application, affiche, invitation, magazine, etc.).
+            <p class="lead" data-i18n="hero.subtitle">
+              Création de sites web professionnels & design graphique pour
+              institutions et entreprises à Kinshasa.
+            </p>
+            <p
+              class="bio"
+              data-i18n="hero.bio"
+              style="color: var(--muted); margin-bottom: 18px"
+            >
+              Ingénieur électricien de formation et développeur web autodidacte,
+              j’allie rigueur technique et créativité pour accompagner aussi
+              bien des projets d’ingénierie que des besoins digitaux. Basé à
+              Kinshasa, je conçois des sites, applications et supports
+              graphiques sur mesure pour entreprises, institutions et
+              particuliers.
             </p>
             <div style="display: flex; gap: 10px; flex-wrap: wrap">
-              <a class="cta" href="#projets">Voir mes projets</a>
-              <a class="cta secondary" href="#contact">Me contacter</a>
+              <a class="cta" href="#contact" data-i18n="hero.cta.primary"
+                >Travaillons ensemble</a
+              >
+              <a
+                class="cta secondary"
+                href="#projets"
+                data-i18n="hero.cta.secondary"
+                >Voir mes projets</a
+              >
             </div>
           </div>
           <div class="hero-art" aria-hidden="true">
@@ -87,7 +163,7 @@
                 height: 200px;
                 border-radius: 16px;
                 overflow: hidden;
-                background: rgba(255, 255, 255, 0.02);
+                background: rgba(255, 255, 255, 0.12);
               "
             >
               <picture>
@@ -105,8 +181,31 @@
                     object-fit: cover;
                     display: block;
                   "
-                  onload="(function(){const f=this.parentNode.parentNode.querySelector('.avatar-fallback'); if(f){ f.style.display='none'; f.setAttribute('aria-hidden','true'); } })();"
-                  onerror="(function(){this.style.display='none'; const f=this.parentNode.parentNode.querySelector('.avatar-fallback'); if(f){ f.style.display='block'; f.setAttribute('aria-hidden','false'); } })();"
+                  onload="
+                    (function () {
+                      const f =
+                        this.parentNode.parentNode.querySelector(
+                          '.avatar-fallback',
+                        );
+                      if (f) {
+                        f.style.display = 'none';
+                        f.setAttribute('aria-hidden', 'true');
+                      }
+                    })()
+                  "
+                  onerror="
+                    (function () {
+                      this.style.display = 'none';
+                      const f =
+                        this.parentNode.parentNode.querySelector(
+                          '.avatar-fallback',
+                        );
+                      if (f) {
+                        f.style.display = 'block';
+                        f.setAttribute('aria-hidden', 'false');
+                      }
+                    })()
+                  "
                 />
               </picture>
 
@@ -124,16 +223,16 @@
                   width="200"
                   height="200"
                   rx="16"
-                  fill="rgba(255,255,255,0.02)"
+                  fill="rgba(255,255,255,0.12)"
                 />
-                <circle cx="60" cy="46" r="20" fill="#60a5fa" />
+                <circle cx="60" cy="46" r="20" fill="#38bdf8" />
                 <rect
                   x="30"
                   y="76"
                   width="60"
                   height="18"
                   rx="6"
-                  fill="rgba(255,255,255,0.04)"
+                  fill="rgba(255,255,255,0.2)"
                 />
               </svg>
             </div>
@@ -151,20 +250,22 @@
             gap: 12px;
           "
         >
-          <h2 id="about-title">À propos</h2>
-          <div style="color: var(--muted)">Simplicité et efficacité</div>
+          <h2 id="about-title" data-i18n="about.title">À propos</h2>
+          <div style="color: var(--muted)" data-i18n="about.tagline">
+            Simplicité et efficacité
+          </div>
         </div>
         <div style="height: 12px"></div>
         <div class="about-grid">
           <div class="card">
             <p style="margin: 0 0 8px">
-              <strong
+              <strong data-i18n="about.intro"
                 >Passionné par le web et la programmation en général, je vous
                 offre une expérience client sur mesure en vous accompagnant pas
                 à pas dans la conception de votre projet.</strong
               >
             </p>
-            <p style="color: var(--muted); margin: 0">
+            <p style="color: var(--muted); margin: 0" data-i18n="about.text">
               Développeur web passionné par la création de solutions numériques
               innovantes, je possède une solide expérience dans le développement
               d’applications front-end et back-end. Maîtrisant les langages
@@ -208,15 +309,13 @@
                   border-radius: 10px;
                   text-decoration: none;
                   box-shadow: 0 6px 18px rgba(59, 130, 246, 0.18);
-                  transition: transform 0.12s ease, box-shadow 0.12s ease;
                 "
-                onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 14px 30px rgba(59,130,246,0.2)';"
-                onmouseout="this.style.transform='none'; this.style.boxShadow='0 6px 18px rgba(59,130,246,0.18)';"
-                onfocus="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 14px 30px rgba(59,130,246,0.2)';"
-                onblur="this.style.transform='none'; this.style.boxShadow='0 6px 18px rgba(59,130,246,0.18)';"
-                href="./assets/pdf/Mon_CV.pdf"
+                href="./assets/pdf/cv_kenny_formel_fr.pdf"
+                data-cv-fr="./assets/pdf/cv_kenny_formel_fr.pdf"
+                data-cv-en="./assets/pdf/cv_kenny_formal_en.pdf"
                 target="_blank"
                 rel="noopener"
+                data-i18n="about.cvButton"
                 >Voir mon CV</a
               >
             </div>
@@ -231,8 +330,13 @@
                 align-items: flex-start;
               "
             >
-              <div style="font-weight: 700">Compétences clés</div>
-              <div style="color: var(--muted); font-size: 0.95rem">
+              <div style="font-weight: 700" data-i18n="about.skills.title">
+                Compétences clés
+              </div>
+              <div
+                style="color: var(--muted); font-size: 0.95rem"
+                data-i18n="about.skills.desc"
+              >
                 Création d’interfaces réactives et accessibles, optimisation des
                 performances web, développement de composants réutilisables avec
                 React, gestion de projets via Git et intégration de maquettes
@@ -242,7 +346,7 @@
                 style="
                   width: 100%;
                   height: 8px;
-                  background: rgba(255, 255, 255, 0.02);
+                  background: rgba(255, 255, 255, 0.15);
                   border-radius: 6px;
                   overflow: hidden;
                   margin-top: 6px;
@@ -263,7 +367,7 @@
 
       <!-- PROJECTS -->
       <section id="projets" aria-labelledby="projects-title">
-        <h2 id="projects-title">Mes Projets</h2>
+        <h2 id="projects-title" data-i18n="projects.title">Mes Projets</h2>
         <div class="projects-grid">
           <!-- Project 1 -->
           <article class="project card" aria-labelledby="p1">
@@ -279,16 +383,20 @@
                 Site vitrine — Institut Bobokoli
               </h3>
               <div class="proj-tech">HTML • CSS • JavaScript</div>
-              <p style="color: var(--muted); margin: 0 0 8px">
+              <p
+                style="color: var(--muted); margin: 0 0 8px"
+                data-i18n="projects.p1.desc"
+              >
                 Site vitrine responsive, optimisation des performances et SEO
                 basique.
               </p>
               <div class="proj-actions">
                 <a
                   class="btn view"
-                  href="https://institut-bobokoli.com/"
+                  href="https://institut-bobokoli.org/"
                   target="_blank"
                   rel="noopener"
+                  data-i18n="projects.viewBtn"
                   >Voir le site</a
                 >
               </div>
@@ -309,114 +417,335 @@
                 Site vitrine - Editions Madose
               </h3>
               <div class="proj-tech">HTML • CSS • JavaScript</div>
-              <p style="color: var(--muted); margin: 0 0 8px">
+              <p
+                style="color: var(--muted); margin: 0 0 8px"
+                data-i18n="projects.p2.desc"
+              >
                 Site vitrine responsive pour maison d'édition, avec galerie
                 d'images et info de contact.
               </p>
-              <div class="proj-actions">
-                <a
-                  class="btn view"
-                  href="https://madose.net/"
-                  target="_blank"
-                  rel="noopener"
-                  >Voir le site</a
-                >
-              </div>
             </div>
           </article>
 
-          <!-- Project 3 -->
-          <article class="project card" aria-labelledby="p3">
+          <!-- Project 3 — Faculté Polytechnique UNIKIN (à venir) -->
+          <article class="project card project-soon" aria-labelledby="p3">
             <div class="thumb">
               <img
-                src="./assets/images/projet_3.png"
-                alt="Capture du projet Pierre Papier Ciseaux"
+                src="./assets/images/projet_faculte_polytechnique.png"
+                alt="Capture du site de Madose"
                 loading="lazy"
               />
             </div>
             <div class="proj-body">
-              <h3 id="p3" class="proj-title" style="margin: 0">
-                Jeu Web — Pierre Papier Ciseaux
+              <h3
+                id="p3"
+                class="proj-title"
+                style="margin: 0"
+                data-i18n="projects.unikin.title"
+              >
+                Faculté Polytechnique UNIKIN
               </h3>
-              <div class="proj-tech">HTML • CSS • JS</div>
-              <p style="color: var(--muted); margin: 0 0 8px">
-                Jeu simple en ligne de Pierre Papier Ciseaux avec score et
-                animations.
+              <div class="proj-tech">Site institutionnel</div>
+              <p
+                style="color: var(--muted); margin: 0 0 8px"
+                data-i18n="projects.unikin.desc"
+              >
+                Site institutionnel en cours de développement.
+              </p>
+            </div>
+          </article>
+
+          <article class="project card" aria-labelledby="p4">
+            <div class="thumb">
+              <img
+                src="./assets/images/projet_miec.png"
+                alt="Capture du site MIEC Polytechnique UNIKIN"
+                loading="lazy"
+              />
+            </div>
+            <div class="proj-body">
+              <h3 id="p4" class="proj-title" style="margin: 0">
+                MIEC — Polytechnique UNIKIN
+              </h3>
+              <div class="proj-tech">Site institutionnel</div>
+              <p
+                style="color: var(--muted); margin: 0 0 8px"
+                data-i18n="projects.miec.desc"
+              >
+                Application Web pour le Mouvement International des Etudiants
+                Catholiques.
               </p>
               <div class="proj-actions">
                 <a
                   class="btn view"
-                  href="https://pierre-feuille-ciseau-kbw.onrender.com/"
+                  href="https://miec-polytech-app.vercel.app/"
                   target="_blank"
                   rel="noopener"
+                  data-i18n="projects.viewBtn"
                   >Voir le site</a
                 >
               </div>
             </div>
           </article>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services" aria-labelledby="services-title">
+        <h2 id="services-title" data-i18n="services.title">Mes Services</h2>
+        <p
+          style="color: var(--muted); margin-bottom: 16px"
+          data-i18n="services.subtitle"
+        >
+          Des solutions web et graphiques adaptées à votre budget.
+        </p>
+
+        <div class="services-group">
+          <h3 class="services-group-title" data-i18n="services.web.title">
+            Web
+          </h3>
+          <div class="services-grid">
+            <div class="card service-card">
+              <div class="service-name" data-i18n="services.web.s1.name">
+                Site vitrine simple (3–5 pages)
+              </div>
+              <div class="service-price" data-i18n="services.web.s1.price">
+                150 – 200 $
+              </div>
+              <a
+                class="btn quote-btn"
+                data-whatsapp-service="services.web.s1.name"
+                href="https://wa.me/243978974603"
+                target="_blank"
+                rel="noopener"
+                data-i18n="services.quoteBtn"
+                >Demander un devis</a
+              >
+            </div>
+            <div class="card service-card">
+              <div class="service-name" data-i18n="services.web.s2.name">
+                Site institutionnel (design sur-mesure)
+              </div>
+              <div class="service-price" data-i18n="services.web.s2.price">
+                250 – 350 $
+              </div>
+              <a
+                class="btn quote-btn"
+                data-whatsapp-service="services.web.s2.name"
+                href="https://wa.me/243978974603"
+                target="_blank"
+                rel="noopener"
+                data-i18n="services.quoteBtn"
+                >Demander un devis</a
+              >
+            </div>
+            <div class="card service-card">
+              <div class="service-name" data-i18n="services.web.s3.name">
+                Maintenance mensuelle
+              </div>
+              <div class="service-price" data-i18n="services.web.s3.price">
+                25 – 40 $/mois
+              </div>
+              <a
+                class="btn quote-btn"
+                data-whatsapp-service="services.web.s3.name"
+                href="https://wa.me/243978974603"
+                target="_blank"
+                rel="noopener"
+                data-i18n="services.quoteBtn"
+                >Demander un devis</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="services-group">
+          <h3 class="services-group-title" data-i18n="services.graphic.title">
+            Graphisme
+          </h3>
+          <div class="services-grid">
+            <div class="card service-card">
+              <div class="service-name" data-i18n="services.graphic.s1.name">
+                Logo
+              </div>
+              <div class="service-price" data-i18n="services.graphic.s1.price">
+                20 – 40 $
+              </div>
+              <a
+                class="btn quote-btn"
+                data-whatsapp-service="services.graphic.s1.name"
+                href="https://wa.me/243978974603"
+                target="_blank"
+                rel="noopener"
+                data-i18n="services.quoteBtn"
+                >Demander un devis</a
+              >
+            </div>
+            <div class="card service-card">
+              <div class="service-name" data-i18n="services.graphic.s2.name">
+                Flyer / Affiche
+              </div>
+              <div class="service-price" data-i18n="services.graphic.s2.price">
+                10 – 20 $
+              </div>
+              <a
+                class="btn quote-btn"
+                data-whatsapp-service="services.graphic.s2.name"
+                href="https://wa.me/243978974603"
+                target="_blank"
+                rel="noopener"
+                data-i18n="services.quoteBtn"
+                >Demander un devis</a
+              >
+            </div>
+            <div class="card service-card">
+              <div class="service-name" data-i18n="services.graphic.s3.name">
+                Carte de visite
+              </div>
+              <div class="service-price" data-i18n="services.graphic.s3.price">
+                10 – 15 $
+              </div>
+              <a
+                class="btn quote-btn"
+                data-whatsapp-service="services.graphic.s3.name"
+                href="https://wa.me/243978974603"
+                target="_blank"
+                rel="noopener"
+                data-i18n="services.quoteBtn"
+                >Demander un devis</a
+              >
+            </div>
+            <div class="card service-card">
+              <div class="service-name" data-i18n="services.graphic.s4.name">
+                Supports institutionnels
+              </div>
+              <div class="service-price" data-i18n="services.graphic.s4.price">
+                Sur devis
+              </div>
+              <a
+                class="btn quote-btn"
+                data-whatsapp-service="services.graphic.s4.name"
+                href="https://wa.me/243978974603"
+                target="_blank"
+                rel="noopener"
+                data-i18n="services.quoteBtn"
+                >Demander un devis</a
+              >
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- DESIGNS -->
       <section id="designs" aria-labelledby="designs-title">
-        <h2 id="designs-title">Mes Designs</h2>
-        <p style="color: var(--muted); margin-bottom: 16px">
+        <h2 id="designs-title" data-i18n="designs.title">Mes Designs</h2>
+        <p
+          style="color: var(--muted); margin-bottom: 16px"
+          data-i18n="designs.subtitle"
+        >
           Découvrez mes travaux de design et ma créativité graphique.
         </p>
-        <div class="card design-main">
-          <div class="design-images">
-            <img
-              src="./assets/images/ADN_1.jpg"
-              alt="Design affiche"
-              loading="lazy"
-            />
-            <img
-              src="./assets/images/ADN_2.jpg"
-              alt="Design invitation"
-              loading="lazy"
-            />
-            <img
-              src="./assets/images/ADN_3.jpg"
-              alt="Design magazine"
-              loading="lazy"
-            />
-          </div>
-
-          <!-- Bouton vers tout le portfolio design -->
-          <div
-            style="grid-column: 1 / -1; text-align: center; margin-top: 16px"
+        <div class="design-gallery">
+          <img
+            src="./assets/images/ADN_1.png"
+            alt="Design affiche"
+            loading="lazy"
+          />
+          <img
+            src="./assets/images/ADN_2.png"
+            alt="Design invitation"
+            loading="lazy"
+          />
+          <img
+            src="./assets/images/ADN_3.png"
+            alt="Design magazine"
+            loading="lazy"
+          />
+          <!-- Ajouter 3 images supplémentaires : assets/images/design-4.jpg, design-5.jpg, design-6.jpg -->
+          <img
+            src="./assets/images/ADN_4.png"
+            alt="Design graphique"
+            loading="lazy"
+          />
+          <img
+            src="./assets/images/ADN_5.png"
+            alt="Design graphique"
+            loading="lazy"
+          />
+          <img
+            src="./assets/images/ADN_6.png"
+            alt="Design graphique"
+            loading="lazy"
+          />
+        </div>
+        <div class="designs-drive">
+          <a
+            class="cta secondary"
+            href="https://drive.google.com/drive/folders/1-PYp6yssX1gqpRC8f1cQbZcuPxonh4Nd?usp=sharing"
+            target="_blank"
+            rel="noopener"
+            data-i18n="designs.driveLink"
+            >Voir plus sur Drive</a
           >
-            <a
-              class="cta"
-              href="https://drive.google.com/drive/folders/1-PYp6yssX1gqpRC8f1cQbZcuPxonh4Nd?usp=sharing"
-              target="_blank"
-              rel="noopener"
-            >
-              Voir tous mes designs
-            </a>
-          </div>
         </div>
       </section>
 
+      <!-- LIGHTBOX -->
+      <div class="lightbox" id="lightbox">
+        <button
+          class="lightbox-close"
+          id="lightboxClose"
+          data-i18n-aria="designs.lightboxClose"
+          aria-label="Fermer"
+        >
+          &times;
+        </button>
+        <img id="lightboxImg" src="" alt="" />
+      </div>
+
       <!-- CONTACT -->
       <section id="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title">Contact</h2>
+        <h2 id="contact-title" data-i18n="contact.title">Contact</h2>
         <div style="height: 6px"></div>
         <div class="contact-grid">
           <div class="card">
             <p style="margin: 0 0 8px">
-              <strong
+              <strong data-i18n="contact.lead"
                 >Tu veux collaborer sur un projet ou en savoir plus ?
                 Écris-moi.</strong
               >
             </p>
-            <p style="color: var(--muted); margin: 0 0 12px">
+            <p
+              style="color: var(--muted); margin: 0 0 12px"
+              data-i18n="contact.text"
+            >
               Je réponds généralement rapidement. Voici mes coordonnées :
             </p>
             <p style="margin: 0 0 8px">
               ✉️
               <a href="mailto:bolukakenny@gmail.com">bolukakenny@gmail.com</a>
             </p>
+            <a
+              class="whatsapp-btn"
+              data-whatsapp="generic"
+              href="https://wa.me/243978974603"
+              target="_blank"
+              rel="noopener"
+              style="margin-top: 4px"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.85.51 3.58 1.4 5.07L2 22l5.2-1.49a9.86 9.86 0 0 0 4.84 1.27h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.78 14.1c-.24.68-1.41 1.33-1.93 1.4-.49.07-1.04.1-1.68-.1-.39-.12-.89-.29-1.53-.57-2.7-1.17-4.46-3.9-4.6-4.09-.13-.18-1.1-1.46-1.1-2.78 0-1.32.69-1.96.93-2.23.24-.27.53-.34.71-.34.18 0 .35 0 .51.01.16.01.38-.06.6.46.23.55.78 1.92.85 2.06.07.14.12.31.02.49-.1.18-.15.29-.29.45-.14.16-.3.36-.43.48-.14.13-.29.27-.13.55.17.28.76 1.25 1.63 2.03 1.12.99 2.07 1.3 2.35 1.45.28.14.45.12.62-.07.18-.19.74-.86.94-1.16.2-.3.4-.25.67-.15.27.1 1.72.81 2.02.96.3.15.5.22.57.34.08.13.08.74-.16 1.42Z"
+                />
+              </svg>
+              <span data-i18n="contact.whatsappBtn">Écrire sur WhatsApp</span>
+            </a>
             <div class="socials" style="margin-top: 12px">
               <a
                 href="https://github.com/Ke2ny13"
@@ -436,23 +765,49 @@
           <div class="card">
             <form
               id="contact-form"
-              onsubmit="handleContact(event)"
+              action="https://formspree.io/f/mpqgdldl"
+              method="POST"
               aria-label="Formulaire de contact"
             >
-              <input type="text" name="name" placeholder="Votre nom" required />
+              <input
+                type="text"
+                name="name"
+                data-i18n-placeholder="contact.form.namePh"
+                placeholder="Votre nom"
+                autocomplete="name"
+                required
+              />
               <input
                 type="email"
                 name="email"
+                data-i18n-placeholder="contact.form.emailPh"
                 placeholder="Votre email"
+                autocomplete="email"
                 required
               />
               <textarea
                 name="message"
                 rows="5"
+                data-i18n-placeholder="contact.form.messagePh"
                 placeholder="Votre message"
                 required
               ></textarea>
-              <button type="submit">Envoyer</button>
+              <input
+                type="text"
+                name="_gotcha"
+                style="display: none"
+                tabindex="-1"
+                autocomplete="off"
+              />
+              <button type="submit" data-i18n="contact.form.submit">
+                Envoyer
+              </button>
+              <p
+                id="contact-form-status"
+                role="status"
+                aria-live="polite"
+                style="margin: 10px 0 0; font-size: 0.9rem; display: none"
+              ></p>
             </form>
           </div>
         </div>
@@ -462,42 +817,14 @@
       <footer>
         <div>© Kenny Boluka <span id="year"></span></div>
         <div style="display: flex; gap: 12px; align-items: center">
-          <a class="top-link" href="#accueil">Retour en haut</a>
+          <a class="top-link" href="#accueil" data-i18n="footer.top"
+            >Retour en haut</a
+          >
         </div>
       </footer>
     </div>
 
-    <script>
-      // année dynamique
-      document.getElementById("year").textContent = new Date().getFullYear();
-
-      // simple contact handler: opens mailto with form data
-      function handleContact(e) {
-        e.preventDefault();
-        const f = e.target;
-
-        const name = f.name.value.trim();
-        const email = f.email.value.trim();
-        const message = f.message.value.trim();
-
-        const subject = encodeURIComponent("Contact via portfolio — " + name);
-        const body = encodeURIComponent(`De: ${name} (${email})\n\n${message}`);
-
-        window.location.href = `mailto:bolukakenny@gmail.com?subject=${subject}&body=${body}`;
-      }
-    </script>
-    <script>
-      const sections = document.querySelectorAll("section");
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) entry.target.classList.add("visible");
-          });
-        },
-        { threshold: 0.1 }
-      );
-
-      sections.forEach((sec) => observer.observe(sec));
-    </script>
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
